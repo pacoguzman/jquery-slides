@@ -1,0 +1,6 @@
+{
+    "name": "ASPgems jQuery Introduction",
+    "sections": [ {"section":"01_intro"}, {"section":"02_aspgems"},
+        {"section":"03_jquery_modules"}, {"section":"04_jquery_js_bp"},
+        {"section":"05_jquery_rails"} ]
+}
