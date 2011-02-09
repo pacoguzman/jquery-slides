@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>ASPgems jQuery Introduction</title>
+
+  <link rel="stylesheet" href="./css/reset.css" type="text/css"/>
+  <link rel="stylesheet" href="./css/showoff.css" type="text/css"/>
+
+  <script type="text/javascript" src="./js/jquery-1.4.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="./js/jquery-print.js"></script>
+  <script type="text/javascript" src="./js/jquery.batchImageLoad.js"></script>
+
+  <script type="text/javascript" src="./js/jquery.doubletap-0.1.js"></script>
+
+  <script type="text/javascript" src="./js/fg.menu.js"></script>
+  <script type="text/javascript" src="./js/showoff.js"></script>
+  <script type="text/javascript" src="./js/jTypeWriter.js"> </script>
+  <script type="text/javascript" src="./js/sh_main.min.js"></script>
+  <script type="text/javascript" src="./js/core.js"></script>
+  <script type="text/javascript" src="./js/showoffcore.js"></script>
+
+  <link type="text/css" href="./css/fg.menu.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/theme/ui.all.css" media="screen" rel="stylesheet" />
+  <link type="text/css" href="./css/sh_style.css" rel="stylesheet" >
+
+  
+
+  
+
+  <script type="text/javascript">
+  $(function(){
+    setupPreso(false, './');
+  });
+  </script>
+</head>
+
+<body>
+
+
+<a tabindex="0" href="#search-engines" class="fg-button fg-button-icon-right ui-widget ui-state-default ui-corner-all" id="navmenu"><span class="ui-icon ui-icon-triangle-1-s"></span>slides</a>
+<div id="navigation" class="hidden"></div>
+
+<div id="help">
+  <table>
+    <tr><td class="key">space, &rarr;</td><td>next slide</td></tr>
+    <tr><td class="key">&larr;</td><td>previous slide</td></tr>
+    <tr><td class="key">d</td><td>debug mode</td></tr>
+    <tr><td class="key">## &lt;ret&gt;</td><td>go to slide #</td></tr>
+    <tr><td class="key">c</td><td>table of contents (vi)</td></tr>
+    <tr><td class="key">f</td><td>toggle footer</td></tr>
+    <tr><td class="key">r</td><td>reload slides</td></tr>
+    <tr><td class="key">z</td><td>toggle help (this)</td></tr>
+  </table>
+</div>
+
+<div id="preso">loading presentation...</div>
+<div id="footer">
+  <span id="slideInfo"></span>
+  <span id="debugInfo"></span>
+</div>
+
+<div id="slides" class="offscreen" style="display:none;">
+<div class="slide" data-transition="none"><div class="content smaller" ref="01_intro/01_slide/1">
+<h1>jQuery Introduction</h1>
+
+<h2>@ ASPgems</h2></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="01_intro/01_slide/2">
+<h1>@pacoguzman</h1>
+
+<h1>github.com/pacoguzman</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="01_intro/01_slide/3">
+<ul>
+<li>jQuery @ ASPgems</li>
+<li>jQuery Modules</li>
+<li>JavaScript and jQuery Best Practices</li>
+<li>jQuery in Rails</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="01_intro/01_slide/4">
+<h1>I'm not going to</h1>
+
+<ul>
+<li>Explain all jQuery functions</li>
+<li>Show all jQuery possibilities</li>
+</ul>
+
+
+<h1>And you don't want either</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="02_aspgems/01_slide/1">
+<h1>Usage</h1>
+
+<p><img src="./file/02_aspgems/usage.png" width="604" height="250" alt="usage"/></p>
+
+<h4>http://trends.builtwith.com/javascript/JQuery</h4></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="02_aspgems/01_slide/2">
+<h1>Interest</h1>
+
+<p><img src="./file/02_aspgems/jquery-interest.png" width="780" height="334" alt="jquery-interest"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="02_aspgems/01_slide/3">
+<h1>Growth</h1>
+
+<p><img src="./file/02_aspgems/jquery-growth.png" width="785" height="334" alt="jquery-growth"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="02_aspgems/01_slide/4">
+<h1>While in</h1>
+
+<p><img src="./file/02_aspgems/aspgems.jpg" width="750" height="550" alt="aspgems"/></p></div>
+</div><div class="slide" data-transition="wipe"><div class="content center" ref="02_aspgems/01_slide/5">
+<p><img src="./file/02_aspgems/donquicong.png" width="480" height="189" alt="donquicong"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content center" ref="02_aspgems/01_slide/6">
+<p><img src="./file/02_aspgems/javiervidal.png" width="480" height="160" alt="javiervidal"/></p></div>
+</div><div class="slide" data-transition="zoom"><div class="content center" ref="02_aspgems/01_slide/7">
+<p><img src="./file/02_aspgems/danimataonrails.png" width="480" height="132" alt="danimataonrails"/></p></div>
+</div><div class="slide" data-transition="curtainY"><div class="content center" ref="02_aspgems/01_slide/8">
+<p><img src="./file/02_aspgems/jquery-logo.png" width="268" height="268" alt="jquery-logo"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="02_aspgems/01_slide/9">
+<h1>write less, do more</h1>
+
+<h1>&#x2208;</h1>
+
+<h1>soluciones &#xE1;giles</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="03_jquery_modules/01_slide/1">
+<h1>jQuery Modules</h1>
+
+<h1>Modularity</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="03_jquery_modules/01_slide/2">
+<h1>jQuery Modules</h1>
+
+<h1>Yehuda no me la suda</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="03_jquery_modules/01_slide/3">
+<h1>All jQuery can</h1>
+
+<h1>be individually loaded</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="03_jquery_modules/01_slide/4">
+<p><img src="./file/03_jquery_modules/jquery-source.png" width="325" height="527" alt="jquery-source"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/5">
+<h1>jQuery API</h1>
+
+<h2>chain methods</h2>
+
+<pre class="sh_javascript"><code>
+$("div").addClass("redbox")</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/6">
+<h1>jQuery API</h1>
+
+<h2>chain methods</h2>
+
+<pre class="sh_javascript"><code>
+$("div").addClass("redbox").fadeOut();</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/7">
+<h1>jQuery API</h1>
+
+<h2>one method many use cases</h2>
+
+<pre class="sh_javascript"><code>$(...).html();
+
+$(...).html("&lt;p&gt;Hello!&lt;/p&gt;");
+
+$(...).html(function(i){
+    return "&lt;p&gt;Hello " + i + "&lt;/p&gt;";
+});</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="03_jquery_modules/01_slide/8">
+<ul>
+<li>DOM</li>
+<li>Events</li>
+<li>Effects</li>
+<li>Ajax</li>
+<li>Plugins</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smbullets" ref="03_jquery_modules/01_slide/9">
+<ul>
+<li>jQuery Core</li>
+<li>Selectors</li>
+<li>Attributes</li>
+<li>Traversing</li>
+<li>Manipulation</li>
+<li>CSS</li>
+<li>Events</li>
+<li>Effects</li>
+<li>Ajax</li>
+<li>Utilities</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/10">
+<h1>jQuery Core</h1>
+
+<pre class="sh_javascript"><code>jQuery('css selector');
+$('css selector');
+jQuery(function(){
+  // executed when DOM ready
+})
+$.sub(); // New in 1.5</code></pre>
+
+<h2>One method many uses cases</h2></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="03_jquery_modules/01_slide/11">
+<h1>DOM - Selectors</h1>
+
+<ul>
+<li>Borrowing from CSS1-3</li>
+<li>Using Sizzle</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="03_jquery_modules/01_slide/12">
+<h1>DOM - Selectors</h1>
+
+<pre class="sh_javascript"><code>$.expr.filters.withRel = function(elem){
+  return ($(elem).attr('rel') !== undefined);
+};
+$("clase:withRel");</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="03_jquery_modules/01_slide/13">
+<h1>DOM - Attributes</h1>
+
+<pre class="sh_javaScript"><code>$("input").attr("id"); // returns id
+$("input").attr("id", "email"); // sets id to email
+$("input").attr("id", function(){ return this.name });
+$("input").removeAttr("id");
+
+// HTML5 data attributes
+$("input").data("disable-with")</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/14">
+<h1>DOM - Attributes/Classes</h1>
+
+<pre class="sh_javaScript"><code>$(".comment").addClass("read");
+$(".comment").removeClass("read");
+$(".comment").toggleClass("read");</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/15">
+<h1>DOM - Attributes/Other</h1>
+
+<pre class="sh_javaScript"><code>// returns the selected option value
+$("select").val();
+$(".comment:first").html()</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/16">
+<h1>DOM - Traversing</h1>
+
+<pre class="sh_javaScript"><code>$("div").parents();
+$("div").siblings();
+$("div").next();
+$("div").prev();
+$("div").closest("a");</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/17">
+<h1>DOM - Manipulation</h1>
+
+<pre class="sh_javaScript"><code>$("#content").append("&lt;p&gt;Hi everyone!&lt;/p&gt;");
+$("&lt;p&gt;Hi everyone!&lt;/p&gt;").appendTo("#content");
+$("#content").prepend("&lt;p&gt;Hi everyone!&lt;/p&gt;");
+$("&lt;p&gt;Hi everyone!&lt;/p&gt;").prependTo("#content");</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="03_jquery_modules/01_slide/18">
+<h1>DOM - Manipulation</h1>
+
+<pre class="sh_javascript"><code>$("body")                 [body]
+  .find("p")              [p, p] =&gt; [body]
+    .find("a")            [a, a] =&gt; [p, p] =&gt; [body]
+        .addClass("foo")
+    .end()                [p, p] =&gt; [body]
+  .end()                  [body]</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/19">
+<h1>DOM - CSS</h1>
+
+<pre class="sh_javascript"><code>$("p").mouseover(function () {
+  $(this).css("color","red");
+});
+
+$("span").click(function () {
+  $(this).css("background-color","yellow");
+});
+
+$.cssHooks // You want superpowers</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/20">
+<h1>Events</h1>
+
+<pre class="sh_javascript"><code>$("li").bind("click", function(){
+  alert("You clicked me!")
+});
+
+// Event binding shortcut
+$("li").click(function(){
+  alert("You clicked me!")
+});
+
+// fire events
+$("li:first").click();
+$("li:first").trigger("click");</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/21">
+<h1>Effects</h1>
+
+<pre class="sh_javascript"><code>$("div").fadeIn();
+$("div").fadeOut("slow");
+$("div").slideDown();
+$("div").slideUp("slow");
+$("button").click(function () {
+  $("p").slideToggle("slow");
+});
+
+// queues ;)</code></pre>
+
+<p><a href="http://www.bennadel.com/blog/1864-Experimenting-With-jQuery-s-Queue-And-Dequeue-Methods.htm">Ben Nadel</a>
+<a href="http://stackoverflow.com/questions/881222/how-do-i-go-about-getting-the-ajax-queue-plugin-working-in-jquery-1-3">Yehuda</a></p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/22">
+<h1>Ajax</h1>
+
+<h2>core method</h2>
+
+<pre class="sh_javascript"><code>$.ajax({
+  url: "test.html",
+  success: function(data){
+    $("#results").append(data);
+  }
+});</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/23">
+<h1>Ajax - Helper methods</h1>
+
+<pre class="sh_javascript"><code>$.get()
+$.post();
+$.getJSON();
+$.getScript();
+$(...).load();</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="03_jquery_modules/01_slide/24">
+<h1>Utilities</h1>
+
+<pre class="sh_javascript"><code>$.extend();
+$.map();
+$.merge();
+$.noop();
+$.proxy();
+$.parseJSON();</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="03_jquery_modules/01_slide/25">
+<h1>Utilities - extend()</h1>
+
+<h3>common plugin pattern</h3>
+
+<pre class="sh_javascript"><code>var empty = {}
+var defaults = { validate: false, limit: 5, name: "foo" };
+var options = { validate: true, name: "bar" };
+var settings = $.extend(empty, defaults, options);
+
+settings == { validate: true, limit: 5, name: "bar" }
+empty == { validate: true, limit: 5, name: "bar" }</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="04_jquery_js_bp/01_slide">
+<h1>JavaScript and jQuery</h1>
+
+<h1>Best Practices</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/02_js_bp/1">
+<h1>JavaScript</h1>
+
+<h1>Best Practices</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/02_js_bp/2">
+<h1>It's still possible to write slow JavaScript on the new, faster JavaScript engines</h1>
+
+<h3>Nicholas Zakas</h3></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="04_jquery_js_bp/02_js_bp/3">
+<h1>Long-running Javascript</h1>
+
+<h1>=</h1>
+
+<h1>Unresponsive UI</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="04_jquery_js_bp/02_js_bp/4">
+<h1>Long UI updates</h1>
+
+<h1>=</h1>
+
+<h1>Unresponsive UI</h1></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/02_js_bp/5">
+<h1>minimize number of globals</h1>
+
+<pre class="sh_javascript"><code>function sum(x, y){
+  // antipattern: implied global
+  result = x + y;
+  return result;
+}
+
+function sum(x, y){
+  var result = x + y;
+  return result;
+}
+
+// follow Single var pattern</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="04_jquery_js_bp/02_js_bp/6">
+<h1>minimize number of globals</h1>
+
+<ul>
+<li>Code difficult to read/follow</li>
+<li>Unexpected conflicts</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/02_js_bp/7">
+<h1>Hoisting</h1>
+
+<pre class="sh_javascript"><code>// antipattern
+myname = "global";
+function func(){
+  alert(myname);
+  var myname = "local";
+  alert(myname);
+}
+func();</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/02_js_bp/8">
+<h1>Hoisting</h1>
+
+<pre class="sh_javascript"><code>// antipattern
+myname = "global";
+function func(){
+  alert(myname); // "undefined"
+  var myname = "local";
+  alert(myname); // "local"
+}
+func();
+
+myname = "global";
+function func(){
+  var myname;
+  alert(myname); // "undefined"
+  myname = "local";
+  alert(myname); // "local"
+}
+func();</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/02_js_bp/9">
+<h1>(Not) Augmenting Built-in Prototypes</h1></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/02_js_bp/10">
+<h1>Avoid Implied Typecasting</h1>
+
+<pre class="sh_javascript"><code>var zero = 0;
+
+// antipattern
+if (zero == false) {
+  // this block is executed
+}
+
+if (zero === false) {
+  // not executed
+}</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content bullets incremental" ref="04_jquery_js_bp/02_js_bp/11">
+<h1>Code conventions</h1>
+
+<ul>
+<li>indentation</li>
+<li>curly braces</li>
+<li>white spaces</li>
+<li>naming conventions</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/03_jquery_bp/1">
+<h1>jQuery</h1>
+
+<h1>Best Practices</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="04_jquery_js_bp/03_jquery_bp/2">
+<h1>Tip 1: Stay up to date</h1>
+
+<ul>
+<li>Always use the latest version of jQuery core</li>
+<li>Performance improvements and bug fixes</li>
+<li>jQuery 1.4.3</li>
+<li>rewrite CSS module</li>
+<li>HTML5 data attributes</li>
+<li>jQuery 1.5</li>
+<li>rewrite Ajax module</li>
+<li>deferred objects</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="04_jquery_js_bp/03_jquery_bp/3">
+<h1>Quick Tip: Test the code while update</h1>
+
+<p><img src="./file/04_jquery_js_bp/mislav-bug.png" width="481" height="179" alt="mislav-bug"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="04_jquery_js_bp/03_jquery_bp/4">
+<h1>Quick Tip: Test the code while update</h1>
+
+<p><img src="./file/04_jquery_js_bp/mislav-fix.png" width="480" height="181" alt="mislav-fix"/></p></div>
+</div><div class="slide" data-transition="none"><div class="content bullets smaller" ref="04_jquery_js_bp/03_jquery_bp/5">
+<h1>Tip 2: Know Your Selectors</h1>
+
+<h2>Fastest to slowest selectors are:</h2>
+
+<ul>
+<li>id selectors</li>
+<li>element selectors</li>
+<li>class selectors</li>
+<li>pseudo &amp; attr selectors (no browser-based call to take advantage of)</li>
+</ul>
+
+
+<h2>ID and element are faster as backed by native DOM operations</h2>
+
+<p>Es muy importante conocer como trabajan los selectores para
+poder ir llevando acabo mejoras de rendimiento o para utilizar
+las opci&#xF3;n con mejor rendimiento directamente en cada caso</p></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/03_jquery_bp/6">
+<h1>Tip 3: Caching = Win</h1>
+
+<pre class="sh_javascript"><code>var parents = $(".parents");
+// antipattern the re-query
+var children = $(".parents").find(".child")</code></pre>
+
+<h3>will re-query your search of the DOM and return a new collection</h3></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/03_jquery_bp/7">
+<h1>Tip 4: Chaining</h1>
+
+<pre class="sh_javascript"><code>var parents = $(".parents").doSomething().doSomethingElse();</code></pre>
+
+<h2>Less code, easier to write and it runs faster</h2></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/03_jquery_bp/8">
+<h1>Tip 4: Chaining</h1>
+
+<h2>Remember code conventions - code clean</h2>
+
+<pre class="sh_javascript"><code>//without chaining/caching
+$("#notification").fadeIn('slow');
+$("#notification").addClass('activeNotification');
+
+//with chaining
+$("#notification").fadeIn('slow')
+                  .addClass('activeNotification');</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/03_jquery_bp/9">
+<h1>Tip 4: Chaining</h1>
+
+<h2>Remember code conventions - code clean</h2>
+
+<pre class="sh_html"><code>&lt;ul class="first"&gt;
+   &lt;li class="foo"&gt;list item 1&lt;/li&gt;
+   &lt;li&gt;list item 2&lt;/li&gt;
+   &lt;li class="bar"&gt;list item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+$('ul.first').find('.foo').addClass("red")
+  .end().find('.bar').addClass("green");
+
+$('ul.first').find('.foo')
+  .addClass('red')
+.end().find('.bar')
+  .addClass('green')
+.end();</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content smaller bullets" ref="04_jquery_js_bp/03_jquery_bp/10">
+<h1>Tip 5: Event Delegation</h1>
+
+<ul>
+<li>isn't just for dynamic content</li>
+<li>speeds up load page</li>
+<li>only one handler is bound vs many</li>
+<li>good for &gt;5 elements all getting the same handler</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/03_jquery_bp/11">
+<h1>Tip 5: Event Delegation</h1></div>
+</div><div class="slide" data-transition="none"><div class="content bullets" ref="04_jquery_js_bp/03_jquery_bp/12">
+<h1>Tip 6: The DOM isn't a database</h1>
+
+<ul>
+<li>Every DOM insertion is costly</li>
+<li>Don't do inside loops</li>
+</ul>
+</div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/03_jquery_bp/13">
+<h1>Tip 6: The DOM isn't a database</h1>
+
+<h3>Build HTML strings and use a single append() as late as possible</h3>
+
+<pre class="sh_javascript"><code>myContainer.append("&lt;li&gt;John Resig&lt;/li&gt;&lt;li&gt;Paul Irish&lt;/li&gt;")</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/03_jquery_bp/14">
+<h1>Tip 6: The DOM isn't a database</h1>
+
+<h2>Use detach()</h2>
+
+<pre class="sh_javascript"><code>var table = $("#some-table");
+var parent = table.parent();
+
+table.detach();
+table.addLotsAndLotsOfRows();
+parent.append(table);</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/03_jquery_bp/15">
+<h1>Quick Tip: Attaching Data</h1>
+
+<pre class="sh_javascript"><code>$("#item").data(key, value);
+
+// much faster
+$.data('#item', key, value)</code></pre>
+
+<h2>Second is a low level method</h2>
+
+<h2>First is a helper method</h2></div>
+</div><div class="slide" data-transition="none"><div class="content smaller" ref="04_jquery_js_bp/03_jquery_bp/16">
+<h1>Tip 7: Try to Avoid loops</h1>
+
+<pre class="sh_javascript"><code>// slow!
+$("#menu a.submenu").each(
+  function(index){
+    $(this).doSomething().doSomethingElse();
+});
+
+// Better!
+$("#menu a.submenu").doSomething().doSomethingElse();</code></pre>
+
+<h2>be careful, applies to all or only one element</h2></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/03_jquery_bp/17">
+<h1>Tip 8: Keep your code DRY</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/03_jquery_bp/18">
+<h1>Protips</h1>
+
+<h2>Learn about lesser known methods</h2></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="04_jquery_js_bp/03_jquery_bp/19">
+<h1>Protips: Namespace your events</h1>
+
+<p><img src="./file/04_jquery_js_bp/danimata-events.png" width="479" height="124" alt="danimata-events"/></p></div>
+</div><div class="slide" data-transition="toss"><div class="content smaller" ref="04_jquery_js_bp/03_jquery_bp/20">
+<h1>Protips: Namespace your events</h1>
+
+<pre class="sh_javascript"><code>$('.class').bind('click.namespace', function(){});
+$('.class').trigger('click.namespace'); // will trigger
+$('.class').trigger('click'); // will trigger
+$('.class').trigger('click.other'); // won't trigger
+$('.class').unbind('click.namespace');
+
+$('.class').unbind('.namespace');</code></pre></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/03_jquery_bp/21">
+<h1>Protips: Read the Source Code</h1></div>
+</div><div class="slide" data-transition="none"><div class="content" ref="04_jquery_js_bp/03_jquery_bp/22">
+<h1>Protips: Learn JavaScript as you learn jQuery</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="05_jquery_rails/01_slide/1">
+<h1>jQuery in Rails</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="05_jquery_rails/01_slide/2">
+<h1>Download jQuery</h1>
+
+<h1>Download jquery-ujs/rails.js</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="05_jquery_rails/01_slide/3">
+<h3>You have all you need</h3>
+
+<h1>Use it</h1></div>
+</div><div class="slide" data-transition="none"><div class="content center" ref="05_jquery_rails/01_slide/4">
+<h2>DEMO</h2>
+
+<p><a href="http://jsfiddle.net/TcyZk/">Event Delegation</a>
+<a href="http://jsfiddle.net/hfuhb/4/">Rails UJS</a></p></div>
+</div>
+</div>
+
+</body>
+</html>
